@@ -1,5 +1,4 @@
 <span align="center" style="text-align:center">Bitzz - The Game</span>
-================
 <h4>Created by Tiago Almeida with MelonJS and Scoreoid</h4>
 
 <br>

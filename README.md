@@ -1,17 +1,16 @@
 Bitzz - The Game
 ==========================
 
-<h1>Created by Tiago Almeida with MelonJS and Scoreoid</h2>
----
+<h4>Created by Tiago Almeida with MelonJS and Scoreoid</h4>
 
-Game Objective:
+Game Objective:<br>
 - Be fast and reach the black portal;<br>
-- Avoid die;
-- Enjoy as well.
+- Avoid die;<br>
+- Enjoy as well.<br>
 
 
-Features:
-* Works on [Mozilla Firefox](http://www.mozilla.org/en-US/firefox/new/), [Google Chrome](http://www.google.co.jp/chrome/) and [Safari](http://www.apple.com/safari/);
+Features:<br>
+- Works on [Mozilla Firefox](http://www.mozilla.org/en-US/firefox/new/), [Google Chrome](http://www.google.co.jp/chrome/) and [Safari](http://www.apple.com/safari/);<br>
 
 
 

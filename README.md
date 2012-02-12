@@ -1,4 +1,4 @@
-<center>Bitzz - The Game
+<span align="center" style="text-align:center">Bitzz - The Game</span>
 ================
 <h4>Created by Tiago Almeida with MelonJS and Scoreoid</h4>
 
@@ -17,7 +17,7 @@ Features:<br>
    - Passwords encrypted (using [jsencryption](http://www.vincentcheung.ca/jsencryption/))<br>
    - Added some extras/cheats<br>
 
-</center>
+
 
 Example
 -------

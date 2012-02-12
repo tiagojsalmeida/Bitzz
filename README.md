@@ -119,6 +119,7 @@ See also the source code on `/lib/melonJS-0.9.2-min.js`.
 
 This code create the secondary parallax movement between player and background.
 
+```
 var PlayerEntity = me.ObjectEntity.extend({
 	(...)
     update: function() {
@@ -127,7 +128,7 @@ var PlayerEntity = me.ObjectEntity.extend({
                 me.game.viewport.move(5, 0)
             }
 }
-
+```
 
 This code saves all the checkpoints id's and positions when loading all objects, and onCollision, verify which checkpoint was touched and saves his id in a string ( same logic applies to Teleport object ).
 

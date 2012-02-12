@@ -3,9 +3,11 @@
 
 <br><br>
 Game Objective:<br>
-* Be fast and reach the black portal;<br>
-* Avoid die;<br>
-* Enjoy as well.<br>
+<ul>
+<li>- Be fast and reach the black portal;</li>
+<li>- Avoid die;</li>
+<li>- Enjoy as well.</li>
+</ul>
 <br><br>
 
 Features:<br>

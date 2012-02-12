@@ -119,7 +119,8 @@ See also the source code on `/lib/melonJS-0.9.2-min.js`.
 
 This code create the secondary parallax movement between player and background.
 
-{var PlayerEntity = me.ObjectEntity.extend({
+},
+var PlayerEntity = me.ObjectEntity.extend({
 	(...)
     update: function() {
             updated = this.updateMovement();

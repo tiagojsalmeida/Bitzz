@@ -1,4 +1,5 @@
-<h1>Bitzz - The Game</h1>
+Bitzz - The Game
+================
 <h4>Created by Tiago Almeida with MelonJS and Scoreoid</h4>
 
 <br><br>
@@ -12,7 +13,7 @@ Game Objective:<br>
 
 Features:<br>
 <ul>
-<li> Tested and working on <a href="www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a>, [Google Chrome](http://www.google.co.jp/chrome/) and [Safari](http://www.apple.com/safari/);</li>
+<li> Tested and working on [Mozilla Firefox](http://www.mozilla.org/en-US/firefox/new/), [Google Chrome](http://www.google.co.jp/chrome/) and [Safari](http://www.apple.com/safari/);</li>
 <li>Excellent physics on game (using [MelonJS](http://www.melonjs.org));</li>
 <li>Highscore with top10 best times (using [Scoreoid](http://www.scoreoid.net)
 );</li>

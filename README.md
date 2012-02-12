@@ -4,20 +4,18 @@ Bitzz - The Game
 
 <br><br>
 Game Objective:<br>
-<ul>
-<li> Be fast and reach the black portal;</li>
-<li> Avoid die;</li>
-<li> Enjoy as well.</li>
-</ul>
+   - Be fast and reach the black portal;
+   - Avoid die;
+   - Enjoy as well.
 <br><br>
 
 Features:<br>
-Tested and working on [Mozilla Firefox](http://www.mozilla.org/en-US/firefox/new/), [Google Chrome](http://www.google.co.jp/chrome/) and [Safari](http://www.apple.com/safari/);
-<li>Excellent physics on game (using [MelonJS](http://www.melonjs.org));</li>
-<li>Highscore with top10 best times (using [Scoreoid](http://www.scoreoid.net)
-);</li>
-<li>Passwords encrypted (using [jsencryption](http://www.vincentcheung.ca/jsencryption/))</li>
-<li>Added some extras/cheats</li>
+   - Tested and working on [Mozilla Firefox](http://www.mozilla.org/en-US/firefox/new/), [Google Chrome](http://www.google.co.jp/chrome/) and [Safari](http://www.apple.com/safari/);<br>
+   - Excellent physics on game (using [MelonJS](http://www.melonjs.org));<br>
+   - Highscore with top10 best times (using [Scoreoid](http://www.scoreoid.net)
+);<br>
+   - Passwords encrypted (using [jsencryption](http://www.vincentcheung.ca/jsencryption/))<br>
+   - Added some extras/cheats<br>
 
 
 

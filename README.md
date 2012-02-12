@@ -119,6 +119,7 @@ See also the source code on `/lib/melonJS-0.9.2-min.js`.
 
 This code create the secondary parallax movement between player and background.
 
+}
 var PlayerEntity = me.ObjectEntity.extend({
 	(...)
     update: function() {
@@ -127,11 +128,12 @@ var PlayerEntity = me.ObjectEntity.extend({
             if (this.pos.x >= 200) {
                 me.game.viewport.move(5, 0)
             }
-});
+}
 
 
 This code saves all the checkpoints id's and positions when loading all objects, and onCollision, verify which checkpoint was touched and saves his id in a string ( same logic applies to Teleport object ).
 
+}
 var Checkpoint = me.CollectableEntity.extend({
     init: function(a, c, b) {
         (...)
@@ -150,7 +152,7 @@ var Checkpoint = me.CollectableEntity.extend({
         }
         this.collidable = false;
     }
-});
+}
 
 
 See also the source code on `/lib/main.js`.
@@ -159,6 +161,7 @@ See also the source code on `/lib/main.js`.
 
 <h4>Code to get Cookies Value.</h4>
 
+}
 function getCookie(c_name) {
     var i, x, y, ARRcookies = document.cookie.split(";");
     for (i = 0; i < ARRcookies.length; i++) {
@@ -177,6 +180,7 @@ function getCookie(c_name) {
 
 <h4>Code of Encrypted Passwords.</h4>
 
+{
 var uHkFhgqX327T = new Array()
 uHkFhgqX327T[0] = "U2FsdGVkX1+MZbAVTEHRugL7SpE66bSvnExmyhC5NZk=";
 uHkFhgqX327T[1] = "U2FsdGVkX1+MZbAVTEHRugL7SpE66bSvnExmyhC5NZk=";
@@ -195,6 +199,7 @@ uHkFhgqX327T[13] = "U2FsdGVkX1/ZG3LmYnKl8Kv8emv10uJYTl5RN6ati6Q=";
 uHkFhgqX327T[14] = "U2FsdGVkX1/WIZn0r1dKXNnSrDbtnzTLwyDk/CV+yfE=";
 uHkFhgqX327T[15] = "U2FsdGVkX19W4F7vwtcZEaCwTqRyI2zorqycx/i7hMM=";
 uHkFhgqX327T[16] = "U2FsdGVkX1+aLtpf0dcKINpc+GGAtLn3ri9sP3/9nXc=";
+}
 
 See also the source code on `/lib/jsencryption.js`.
 

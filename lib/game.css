@@ -1,0 +1,134 @@
+/**
+ * Bitzz - The Game
+ * Created by Tiago Almeida, 2011/2012
+ */
+
+
+@charset "UTF-8";
+	@font-face {
+	font-family: bit;
+	src: url(font/8bit.TTF);
+	font-weight: 400;
+}
+
+body {
+	overflow: hidden;
+}
+
+#main {
+	padding: 0;
+	position: absolute;
+	margin-left: 22%;
+	margin-right: 22%;
+	top: 0;
+	left: 0;
+	background-color: #000000;
+	font-family: bit, Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 21px;
+	z-index: 0;
+}
+
+#main2 {
+	padding: 0;
+	position: absolute;
+	top: 20;
+	left: 0;
+	font-family: bit, Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	width: 700px;
+	height: 480px;
+	font-size: 21px;
+	z-index: 0;
+}
+
+#back2 {
+	position: absolute;
+	z-index: 20;
+	top: 0px;
+	left: -226px;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+#rungif {
+	position: absolute;
+	z-index: 20;
+	top: -90px;
+	left: 0px;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+#loading {
+	position: absolute;
+	z-index: 19;
+	top: 0px;
+	left: 0px;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+#enter_highscore {
+	padding: 0;
+	position: absolute;
+	top: 20;
+	left: 0;
+	background-image: url("../data/img/entername.png");
+	font-family: bit, Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	width: 700px;
+	height: 480px;
+	font-size: 21px;
+	z-index: 0;
+}
+
+#beg2 {
+	position: relative;
+	top: 20;
+	left: 115%;
+	font-family: bit, Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	background-color: #000000;
+	color: #FFFFFF;
+	border: 0px;
+}
+
+#back_menu2 {
+	position: absolute;
+	z-index: 23;
+	top: 490px;
+	left: 550px;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+#back_menu {
+	position: absolute;
+	z-index: 10;
+	top: 440px;
+	left: 290px;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+input {
+	font-family: bit, Helvetica, Arial, sans-serif;
+	color: #262626;
+	font-size: 21px;
+}

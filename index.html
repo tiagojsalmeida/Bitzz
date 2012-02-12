@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Bitzz - The Game</title>
+    <link rel="icon" href="data/img/player_black.png" type="image/x-ico"/>
+    <link rel="shortcut icon" href="data/img/player_black.png" type="image/x-ico"/>
+    <meta name="description" content="Bitzz is an unique plataform game created with MelonJS and Scoreoid. You must be fast and help bitz escape from Chaos, an Evil Virus. Created by Tiago Almeida, University of Aveiro, 2012"/>
+    <meta name="keywords"
+          content="game, bitzz, megaproducoes, mega, producoes, projecto, laboratorio, multimedia, 3, labmm3, javascript, melonjs, scoreoid, ua, universidade, aveiro, novas, tecnologias, comunicacao, ntc, 2012, 2011, games, game, Bitzz, unique, game, MelonJS, Scoreoid, phoneGap, Bitzz, Game, tiago, almeida, Tiago, Almeida"/>
+    <meta name="author" content="Tiago Almeida">
+    <meta name="robots" content="index, follow"/>
+    <link href="lib/style.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/index.js"></script>
+    <script type="text/javascript" src="lib/jsencryption.js"></script>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29015854-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body bgcolor="black" onload="if(highscore=='true'){document.getElementById('final').style.display='block'}if(highscore2=='true'){document.getElementById('loader').style.display='block';document.getElementById('enter_highscore').style.display = 'none';document.getElementById('highscore').style.display = 'block';timer_score = setInterval('timerscore()', 100)}else{document.getElementById('menu_init').style.display='block';document.getElementById('menu').style.display='block'}">
+<div id="background_music">
+<audio autoplay loop id="backgroundmusic"><source src='data/audio/background_music.ogg' type='audio/ogg'><source src='data/audio/background_music.mp3' type='audio/mp3'></audio>
+</div>
+<div id="music"></div>
+
+<div id="main">
+    <div id="main2">
+    			                    <img src="data/img/timeout.png" id="timeout" style="display:none" onclick="document.getElementById('loader').style.display='none';document.getElementById('timeout').style.display='none';document.getElementById('highscore').style.display='none';document.getElementById('menu_init').style.display='block';document.getElementById('menu').style.display='block'">
+        <div id="menu_init" style="display: none">
+        <img src="data/img/back3.png" id="back2">
+        <img src="data/img/bitzz.png" id="bitzz" onmouseover="this.src='data/img/bitzz2.png'" onmouseout="this.src='data/img/bitzz.png'">
+        <img src="data/img/player_black.png" id="player">
+        <img src="data/img/menu.png" id="menu_back">
+        <img src="data/img/parallax.gif" id="parallax">
+        </div>
+
+        <div id="intro1" style="display: none">
+            <img src="data/img/1.png" id="introimg1">
+            <img src="data/img/skip.png" id="skip1" onclick="playGame(1)" onmouseover="this.src='data/img/skip2.png'" onmouseout="this.src='data/img/skip.png'">
+            <img src="data/img/continue_small.png" id="continue_small1" onclick="playGame(3)" onmouseover="this.src='data/img/continue_small2.png'" onmouseout="this.src='data/img/continue_small.png'">
+        </div>
+
+        <div id="intro2" style="display: none">
+            <img src="data/img/2.png" id="introimg2">
+            <img src="data/img/skip.png" id="skip2" onclick="playGame(1)" onmouseover="this.src='data/img/skip2.png'" onmouseout="this.src='data/img/skip.png'">
+            <img src="data/img/continue_small.png" id="continue_small2" onclick="playGame(4)" onmouseover="this.src='data/img/continue_small2.png'" onmouseout="this.src='data/img/continue_small.png'">
+        </div>
+
+        <div id="intro3" style="display: none">
+            <img src="data/img/3.png" id="introimg3">
+            <img src="data/img/skip.png" id="skip3" onclick="playGame(1)" onmouseover="this.src='data/img/skip2.png'" onmouseout="this.src='data/img/skip.png'">
+            <img src="data/img/continue_small.png" id="continue_small3" onclick="playGame(5)" onmouseover="this.src='data/img/continue_small2.png'" onmouseout="this.src='data/img/continue_small.png'">
+        </div>
+
+        <div id="intro4" style="display: none">
+            <img src="data/img/4.png" id="introimg4">
+            <img src="data/img/skip.png" id="skip4" onclick="playGame(1)" onmouseover="this.src='data/img/skip2.png'" onmouseout="this.src='data/img/skip.png'">
+            <img src="data/img/continue_small.png" id="continue_small4" onclick="playGame(6)" onmouseover="this.src='data/img/continue_small2.png'" onmouseout="this.src='data/img/continue_small.png'">
+        </div>
+
+        <div id="intro5" style="display: none">
+            <img src="data/img/5.png" id="introimg5">
+            <img src="data/img/play_intro.png" id="play_intro" onclick="playGame(1)" onmouseover="this.src='data/img/play_intro2.png'" onmouseout="this.src='data/img/play_intro.png'">
+        </div>
+
+        <div id="final" style="display: none">
+            <img src="data/img/final.png" id="final_img">
+            <img src="data/img/back3.png" id="back5">
+            <img src="data/img/continue_small.png" id="continue_small5" onclick="document.getElementById('final').style.display='none';document.getElementById('enter_highscore').style.display='block'" onmouseover="this.src='data/img/continue_small2.png'" onmouseout="this.src='data/img/continue_small.png'">
+        </div>
+
+	<div id="menu" style="display: none">
+        <img src="data/img/play.png" id="play" onclick="menuclick(1)" onmouseover="this.src='data/img/play2.png'" onmouseout="this.src='data/img/play.png'">
+        <img src="data/img/inst.png" id="inst" onclick="menuclick(2)" onmouseover="this.src='data/img/inst2.png'" onmouseout="this.src='data/img/inst.png'">
+        <img src="data/img/pass.png" id="pass" onclick="menuclick(3)" onmouseover="this.src='data/img/pass2.png'" onmouseout="this.src='data/img/pass.png'">
+        <img src="data/img/high.png" id="high" onclick="menuclick(11)" onmouseover="this.src='data/img/high2.png'" onmouseout="this.src='data/img/high.png'">
+        <img src="data/img/sett.png" id="sett" onclick="menuclick(4)" onmouseover="this.src='data/img/sett2.png'" onmouseout="this.src='data/img/sett.png'">
+        <img src="data/img/credits.png" id="cred" onclick="menuclick(10)" onmouseover="this.src='data/img/credits2.png'" onmouseout="this.src='data/img/credits.png'">
+
+	</div>
+		    <div id="menu2" style="display: none">
+                <img src="data/img/continue.png" id="continuegame" onclick="menuclick(5)" onmouseover="this.src='data/img/continue2.png'" onmouseout="this.src='data/img/continue.png'">
+                <img src="data/img/selectlevel.png" id="selectlevel" onclick="menuclick(12)" onmouseover="this.src='data/img/selectlevel2.png'" onmouseout="this.src='data/img/selectlevel.png'">
+                <img src="data/img/new.png" id="newgame" onclick="menuclick(6)" onmouseover="this.src='data/img/new2.png'" onmouseout="this.src='data/img/new.png'">
+            </div>
+
+			<div id="password" style="display: none">
+                <img src="data/img/enter.png" id="enter">
+                <img src="data/img/wrong.png" id="wrong">
+                <input type="text" id="enterpass" maxlength="10" value="EXAMPLE!" style="text-transform: uppercase" onkeypress="javascript:this.value=this.value.toUpperCase();" >
+                <img src="data/img/submit.png" id="testpass" onclick="menuclick(7)" onmouseover="this.src='data/img/submit2.png'" onmouseout="this.src='data/img/submit.png'">
+            </div>
+			<div id="settings" style="display: none">
+                <img src="data/img/sound.png" id="sound" onclick="menuclick(8)">
+                <img src="data/img/black.png" id="color" onclick="menuclick(9)">
+
+			</div>
+			<div id="instructions" style="display: none">
+                <img src="data/img/menu_inst.png" id="menu_inst">
+			</div>
+			<div id="credits" style="display: none">
+            <a href="http://www.ua.pt/"><img src="data/img/uaa.png" id="credit1" onclick="testname()" onmouseover="this.src='data/img/ua2.png'" onmouseout="this.src='data/img/uaa.png'"></a>
+            <a href="http://www.melonjs.org/"><img src="data/img/melon.png" id="credit2" onclick="testname()" onmouseover="this.src='data/img/melon2.png'" onmouseout="this.src='data/img/melon.png'"></a>
+            <a href="http://http://www.scoreoid.net/"><img src="data/img/scoreoid.png" id="credit3" onclick="testname()" onmouseover="this.src='data/img/scoreoid2.png'" onmouseout="this.src='data/img/scoreoid.png'"></a>
+            <img src="data/img/created.png" id="credit4" onclick="testname()" onmouseover="this.src='data/img/created2.png'" onmouseout="this.src='data/img/created.png'">
+			</div>
+        <div id="enter_highscore" style="display: none">
+            <img src="data/img/back3.png" id="back4">
+            <img src="data/img/entername.png" id="entername">
+            <img src="data/img/submitname.png" id="submit" onclick="testname()" onmouseover="this.src='data/img/submitname2.png'" onmouseout="this.src='data/img/submitname.png'">
+            <input type="text" id="name" size="7" value="HERE" maxlength="7" style="text-transform: uppercase" >
+
+        </div>
+
+		<div id="loader" style="display: none">
+		            <img src="data/img/loading.png" id="loading">
+            <img src="data/img/runner.gif" id="loading_gif">
+                <img src="data/img/back3.png" id="back6">
+		</div> 
+
+        <div id="highscore" style="display: none">
+                        <img src="data/img/back3.png" id="back3">
+            <input type="text" id="name1" size="7" value="Player 1" maxlength="7" onkeypress="return false;" style="text-transform: uppercase" >
+            <input type="text" id="name2" size="7" value="Player 2" maxlength="7" onkeypress="return false;" style="text-transform: uppercase" >
+            <input type="text" id="name3" size="7" value="Player 3" maxlength="7" onkeypress="return false;" style="text-transform: uppercase" >
+            <input type="text" id="name4" size="7" value="Player 4" maxlength="7" onkeypress="return false;" style="text-transform: uppercase" >
+            <input type="text" id="name5" size="7" value="Player 5" maxlength="7" onkeypress="return false;" style="text-transform: uppercase" >
+            <input type="text" id="name6" size="7" value="Player 6" maxlength="7" onkeypress="return false;" style="text-transform: uppercase" >
+            <input type="text" id="name7" size="7" value="Player 7" maxlength="7" onkeypress="return false;" style="text-transform: uppercase" >
+            <input type="text" id="name8" size="7" value="Player 8" maxlength="7" onkeypress="return false;" style="text-transform: uppercase" >
+            <input type="text" id="name9" size="7" value="Player 9" maxlength="7" onkeypress="return false;" style="text-transform: uppercase" >
+            <input type="text" id="name10" size="7" value="Player 10" maxlength="7" onkeypress="return false;" style="text-transform: uppercase" >
+            <input type="text" id="score1" size="7" value="Score 1" maxlength="7" onkeypress="return false;" >
+            <input type="text" id="score2" size="7" value="Score 2" maxlength="7" onkeypress="return false;" >
+            <input type="text" id="score3" size="7" value="Score 3" maxlength="7" onkeypress="return false;" >
+            <input type="text" id="score4" size="7" value="Score 4" maxlength="7" onkeypress="return false;" >
+            <input type="text" id="score5" size="7" value="Score 5" maxlength="7" onkeypress="return false;" >
+            <input type="text" id="score6" size="7" value="Score 6" maxlength="7" onkeypress="return false;" >
+            <input type="text" id="score7" size="7" value="Score 7" maxlength="7" onkeypress="return false;" >
+            <input type="text" id="score8" size="7" value="Score 8" maxlength="7" onkeypress="return false;" >
+            <input type="text" id="score9" size="7" value="Score 9" maxlength="7" onkeypress="return false;" >
+            <input type="text" id="score10" size="7" value="Score 10" maxlength="7" onkeypress="return false;" >
+            <img src="data/img/back_menu.png" id="back_menu2" onclick="menuclick(0)" onmouseover="this.src='data/img/back_menu2.png'" onmouseout="this.src='data/img/back_menu.png'">
+
+        </div>
+		<div id="select_level" style="display: none">
+		     <img src="data/img/select_level.png" id="select_level_back">
+            <img src="data/img/back_menu.png" id="back_menu2" onclick="menuclick(0)" onmouseover="this.src='data/img/back_menu2.png'" onmouseout="this.src='data/img/back_menu.png'">
+        	<img src="data/img/select1_1.png" id="select_level1">
+        	<img src="data/img/select2_2.png" id="select_level2">
+        	<img src="data/img/select3_3.png" id="select_level3">
+        	<img src="data/img/select4_4.png" id="select_level4">
+        	<img src="data/img/select5_5.png" id="select_level5">
+        	<img src="data/img/select6_6.png" id="select_level6">
+        	<img src="data/img/select7_7.png" id="select_level7">
+        	<img src="data/img/select8_8.png" id="select_level8">
+        	<img src="data/img/select9_9.png" id="select_level9">
+        	<img src="data/img/select10_10.png" id="select_level10">
+        	<img src="data/img/select11_11.png" id="select_level11">     
+        	<img src="data/img/select12_12.png" id="select_level12"> 
+        	<img src="data/img/select13_13.png" id="select_level13"> 
+        	<img src="data/img/select14_14.png" id="select_level14"> 
+        	<img src="data/img/select15_15.png" id="select_level15">    	
+        	        </div>
+
+        <img src="data/img/back_menu.png" id="back_menu" style="display: none" onclick="menuclick(0)" onmouseover="this.src='data/img/back_menu2.png'" onmouseout="this.src='data/img/back_menu.png'">
+
+    <div id="fps" style="float: right;">
+   </div>
+
+</div>
+<img src="data/img/credits_back.png" id="credits_back">
+            <img src="data/img/use.png" id="use"  onmouseover="this.src='data/img/use2.png'" onmouseout="this.src='data/img/use.png'">
+ 			<a href="http://www.ua.pt/"><img src="data/img/uaa.png" id="credit1"  onmouseover="this.src='data/img/ua2.png'" onmouseout="this.src='data/img/uaa.png'"></a>
+            <a href="http://www.melonjs.org/"><img src="data/img/melon.png" id="credit2"  onmouseover="this.src='data/img/melon2.png'" onmouseout="this.src='data/img/melon.png'"></a>
+            <a href="http://www.scoreoid.net/"><img src="data/img/scoreoid.png" id="credit3" onmouseover="this.src='data/img/scoreoid2.png'" onmouseout="this.src='data/img/scoreoid.png'"></a>
+            <img src="data/img/created.png" id="credit4" onmouseover="this.src='data/img/created2.png'" onmouseout="this.src='data/img/created.png'">
+
+</div>
+
+
+</body>
+</html>

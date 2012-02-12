@@ -1,14 +1,22 @@
-TypeSequence jQuery plugin
+Bitzz - The Game
 ==========================
 
-Options
--------
-Accepts three options:
+Created by Tiago Almeida with MelonJS and Scoreoid
+---
 
-* `sequence` [ARRAY] an array with either key codes or a string with special keys such as ENTER;
-* `enter` [BOOL] if the enter key needs to be pressed at the end. Default: false;
-* `callback` [FUNCTION] the JS function that needs to be called when the sequence is completed.
-* `once` [BOOL OR STRING] `true` if only one time the sequence can be typed; `false` for multiple times (default); `'depends'` looks at the return of the callback function: if true, the sequence can't be typed again.
+Game Objective:
+* Be fast and reach the black portal;
+* Avoid die;
+* Enjoy as well.
+
+
+Features:
+*Works on [Mozilla Firefox](http://www.mozilla.org/en-US/firefox/new/), [Google Chrome](http://www.google.co.jp/chrome/) and [Safari](http://www.apple.com/safari/);
+*
+
+
+
+
 
 Example
 -------

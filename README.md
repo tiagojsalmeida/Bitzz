@@ -1,12 +1,12 @@
-Bitzz - The Game
+<center>Bitzz - The Game
 ================
 <h4>Created by Tiago Almeida with MelonJS and Scoreoid</h4>
 
-<br><br>
+<br>
 Game Objective:<br>
-   - Be fast and reach the black portal;
-   - Avoid die;
-   - Enjoy as well.
+   - Be fast and reach the black portal;<br>
+   - Avoid die;<br>
+   - Enjoy as well.<br>
 <br><br>
 
 Features:<br>
@@ -17,7 +17,7 @@ Features:<br>
    - Passwords encrypted (using [jsencryption](http://www.vincentcheung.ca/jsencryption/))<br>
    - Added some extras/cheats<br>
 
-
+</center>
 
 Example
 -------

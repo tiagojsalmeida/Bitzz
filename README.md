@@ -270,3 +270,7 @@ function seeScore() {
 
 See also the source code on `/lib/index.js`.
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tiagojsalmeida/bitzz/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
